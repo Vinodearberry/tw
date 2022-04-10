@@ -11,7 +11,7 @@ function App() {
                 <a className="flex items-center py-4 px-2" href="#">
                   <img className="h-8 w-8 mr-2" src="images/house.png" alt="" />
                   <span className="semi-bold text-gray-500 text-lg">
-                    Prime Properties
+                    Deluxe Properties
                   </span>
                 </a>
               </div>
@@ -295,7 +295,7 @@ function App() {
       <div>
         <div>
           <div className="mt-16 flex justify-center">
-            <h2 className="sm:text-xl md:text-4xl lg:text-6xl xl:text-6xl font-bold text-gray-500">
+            <h2 className="text-3xl text-gray-500 mb-2">
               What clients say about us ?
             </h2>
           </div>
@@ -380,6 +380,91 @@ function App() {
       {/* Testimonials Cards */}
 
       {/* Testimonials */}
+
+      <div className="mt-20 flex p-10 justify-center">
+        <h2 className="text-3xl text-gray-500 mb-2">Contact us</h2>
+      </div>
+
+      <div className="bg-green-300 mt-5 flex p-10 justify-center items-center ">
+        <form className="w-full max-w-lg">
+          <div className="flex mb-6 flex-wrap">
+            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                htmlFor=""
+                className="block uppercase text-md text-gray-700 font-bold mb-2 tracking-wider"
+              >
+                First Name
+              </label>
+              <input
+                type="text"
+                placeholder="Mary"
+                className=" py-3 px-4 mb-3 rounded text-gray-700 block w-full border-green-500"
+              />
+              <p className="text-sm text-green-500 italic">
+                Please fill out this field
+              </p>
+            </div>
+
+            <div className="w-full md:w-1/2 px-3 md:mb-0">
+              <label
+                htmlFor=""
+                className="block uppercase text-md text-gray-700 font-bold mb-2 tracking-wider"
+              >
+                Last Name
+              </label>
+              <input
+                type="text"
+                placeholder="Jane"
+                className=" py-3 px-4 rounded text-gray-700 block w-full border-green-500"
+              />
+            </div>
+          </div>
+
+          <div className="flex mb-6">
+            <div className="w-full px-3">
+              <label
+                htmlFor=""
+                className="block uppercase text-md text-gray-700 font-bold mb-2 tracking-wider"
+              >
+                Email
+              </label>
+              <input
+                type="text"
+                placeholder="example@example.com"
+                className=" py-3 px-4 mb-3 rounded text-gray-700 block w-full border-green-500"
+              />
+              <p className="text-sm text-green-500 italic mt-3">
+                Please fill out this field
+              </p>
+            </div>
+          </div>
+
+          <div className="flex mb-6">
+            <div className="w-full px-3">
+              <label
+                htmlFor=""
+                className="block uppercase text-md text-gray-700 font-bold mb-2 tracking-wider"
+              >
+                Message
+              </label>
+              <textarea
+                placeholder="Type your message here"
+                className="no-resize resize-none h-48 appearance-none py-3 px-4 mb-3 rounded text-gray-700 block w-full border-green-500"
+              />
+              <p className="text-sm text-green-500 italic mt-3">
+                Please fill out this field
+              </p>
+            </div>
+          </div>
+          <div className="md:flex md:items-center">
+            <div className="md:w-1/3 mx-2">
+              <button className="shadow bg-green-400 text-white py-2 px-4 rounded">
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </>
   );
 }
