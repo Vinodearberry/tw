@@ -1,4 +1,5 @@
 import "./App.css";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function App() {
   return (
@@ -48,11 +49,13 @@ function App() {
 
       {/* Site Banner */}
 
-      <main className="mt-10 px-4 md:mt-16">
+      <main className="mt-10 px-4 md:mt-16 mx-auto max-w-7xl lg:mt-20 lg:px-8 xl:mt-28">
         <div className="sm:text-center lg:text-left">
           <h1 className="tracking-tight font-extrabold text-4xl sm:text-5xl md:text-6xl">
-            <span className="block">Premium Properties</span>
-            <span className="block text-green-500">Non-Premium Prices</span>
+            <span className="block xl:inline">Premium Properties </span>
+            <span className="block text-green-500 xl:inline">
+              Non-Premium Prices
+            </span>
           </h1>
           <p className="mt-3 text-base text-gray-500 md:text-xl md:mt-5 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto lg:mx-0">
             At prime properties, we ensure that our clients get the best
@@ -60,8 +63,8 @@ function App() {
             our constrain. Pick and choose from 1000+ properties across the
             globe.
           </p>
-          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center">
-            <div className="md:m-2">
+          <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div className="md:m-2 mb-3">
               <a
                 className=" flex justify-center bg-green-500 text-white px-8 py-3 rounded-md"
                 href=""
@@ -465,6 +468,107 @@ function App() {
           </div>
         </form>
       </div>
+
+      {/* Footer Starts */}
+
+      <footer className="pt-40 px-4">
+        <div className="container flex flex-col justify-between mx-auto space-y-8 lg:flex-row lg:space-y-0">
+          <div className="lg:w-1/3">
+            <a href="" className="flex justify-center">
+              <div className="flex w-12 h-12">
+                <img src="images/house.png" className="h-8 w-8 mr-2" alt="" />
+              </div>
+              <span className="font font-semibold text-gray-500 text-2xl">
+                Prime Properties
+              </span>
+            </a>
+          </div>
+
+          <div className="grid grid-cols-2 gap-x-3 gap-y-8 sm:grid-cols-4 lg:w-2/3">
+            <div className="space-y-3">
+              <h3 className="uppercase text-green-500 tracking-wide ">
+                Product
+              </h3>
+              <ul className="space-y-1">
+                <li>
+                  <a href="">Features</a>
+                </li>
+                <li>
+                  <a href="">Integrations</a>
+                </li>
+                <li>
+                  <a href="">Pricing</a>
+                </li>
+                <li>
+                  <a href="">FAQ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <h3 className="uppercase text-green-500 tracking-wide">
+                Company
+              </h3>
+              <ul className="space-y-1">
+                <li>
+                  <a href="">Features</a>
+                </li>
+                <li>
+                  <a href="">Integrations</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <h3 className="uppercase text-green-500 tracking-wide">
+                Developers
+              </h3>
+              <ul className="space-y-1">
+                <li>
+                  <a href="">Public API</a>
+                </li>
+                <li>
+                  <a href="">Documentation</a>
+                </li>
+                <li>
+                  <a href="">Guides</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="space-y-3">
+              <h3 className="uppercase text-green-500 tracking-wide">
+                Social media
+              </h3>
+              <div className="flex gap-3">
+                <div className="flex justify-start">
+                  <a href="">
+                    <FaFacebook className="w-8 h-8" />
+                  </a>
+                </div>
+                <div className="flex justify-start">
+                  <a href="">
+                    <FaTwitter className="w-8 h-8" />
+                  </a>
+                </div>
+                <div className="flex justify-start">
+                  <a href="">
+                    <FaInstagram className="w-8 h-8" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr className="m-10" />
+
+        <div className="text-center text-green-500 py-6">
+          1986 Company. All Rights Reserved
+        </div>
+      </footer>
+
+      {/* Footer Ends */}
     </>
   );
 }
