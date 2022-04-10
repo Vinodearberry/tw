@@ -239,7 +239,7 @@ function App() {
         </div>
 
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full " src="images/newyork.jpg" alt="" />
+          <img className="w-full " src="images/ny.jpg" alt="" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">New York</div>
             <p className="text-gray-700">
