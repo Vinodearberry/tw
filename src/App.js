@@ -217,7 +217,7 @@ function App() {
       <div className="grid p-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         {/* Card */}
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full h-1/2" src="images/chicago.jpg" alt="" />
+          <img className="w-full " src="images/chicago.jpg" alt="" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">San Francisco</div>
             <p className="text-gray-700">
@@ -236,7 +236,7 @@ function App() {
         </div>
 
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full h-1/2" src="images/newyork.jpg" alt="" />
+          <img className="w-full " src="images/newyork.jpg" alt="" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">New York</div>
             <p className="text-gray-700">
@@ -253,7 +253,7 @@ function App() {
         </div>
 
         <div className="rounded overflow-hidden shadow-lg">
-          <img className="w-full h-1/2" src="images/California.jpg" alt="" />
+          <img className="w-full " src="images/California.jpg" alt="" />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">California</div>
             <p className="text-gray-700">
@@ -273,6 +273,113 @@ function App() {
       </div>
 
       {/* Card Section */}
+
+      {/* Banner */}
+
+      <div className="py-20 backgroundBannerColor">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-white mb-2">
+            Save upto 50% on broker commisions
+          </h2>
+          <h3 className="text-2xl mb-8 text-gray-200">Lowest Brokerage fees</h3>
+          <button className=" bg-white rounded-2xl uppercase border-2 px-8 py-4 font-bold tracking-wider shadow-lg">
+            Enquire
+          </button>
+        </div>
+      </div>
+
+      {/* Banner */}
+
+      {/* Testimonials */}
+      {/* Testimonials Banner*/}
+      <div>
+        <div>
+          <div className="mt-16 flex justify-center">
+            <h2 className="sm:text-xl md:text-4xl lg:text-6xl xl:text-6xl font-bold text-gray-500">
+              What clients say about us ?
+            </h2>
+          </div>
+        </div>
+      </div>
+      {/* Testimonials Banner */}
+
+      {/* Testimonials Cards */}
+
+      <div>
+        {/* Card Container */}
+
+        <div className="grid p-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+          <div className="shadow-lg p-5 rounded-xl ">
+            <div>
+              <p className="text-gray-500 text-2xl">
+                <span className="text-green-500">"</span>To get social media
+                testimonials like these, keep your customers engaged with your
+                social media accounts by posting regularly yourself
+                <span className="text-green-500">"</span>
+              </p>
+            </div>
+            <div className="pt-10 ">
+              <div className="bg-green-100 rounded-full flex items-center">
+                <img src="images/avatar.png" alt="" />
+                <div className="flex-col pl-5">
+                  <p className="text-green-500 font-bold">Richard Parker</p>
+                  <p className="text-gray-800 flex items-center">
+                    User of Tail-kit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="shadow-lg p-5 rounded-xl">
+            <div>
+              <p className="text-gray-500 text-2xl">
+                <span className="text-green-500">"</span>To get social media
+                testimonials like these, keep your customers engaged with your
+                social media accounts by posting regularly yourself
+                <span className="text-green-500">"</span>
+              </p>
+            </div>
+            <div className="pt-10 ">
+              <div className="bg-green-100 rounded-full flex items-center">
+                <img src="images/avatar.png" alt="" />
+                <div className="flex-col pl-5">
+                  <p className="text-green-500 font-bold">Timmy Denson</p>
+                  <p className="text-gray-800 flex items-center">
+                    User of Head-kit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="shadow-lg p-5 rounded-xl">
+            <div>
+              <p className="text-gray-500 text-2xl">
+                <span className="text-green-500">"</span>To get social media
+                testimonials like these, keep your customers engaged with your
+                social media accounts by posting regularly yourself
+                <span className="text-green-500">"</span>
+              </p>
+            </div>
+            <div className="pt-10 ">
+              <div className="bg-green-100 rounded-full flex items-center">
+                <img src="images/avatar.png" alt="" />
+                <div className="flex-col pl-5">
+                  <p className="text-green-500 font-bold">Mary Jane</p>
+                  <p className="text-gray-800 flex items-center">
+                    User of React-kit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonials Cards */}
+
+      {/* Testimonials */}
     </>
   );
 }
